@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'inicio-sesion-correo',
+    loadChildren: () => import('./inicio-sesion-correo/inicio-sesion-correo.module').then( m => m.InicioSesionCorreoPageModule)
+  },
+  {
+    path: 'inicio-sesion-cel',
+    loadChildren: () => import('./inicio-sesion-cel/inicio-sesion-cel.module').then( m => m.InicioSesionCelPageModule)
+  },
+  {
+    path: 'crear-cuenta',
+    loadChildren: () => import('./crear-cuenta/crear-cuenta.module').then( m => m.CrearCuentaPageModule)
+  },
 ];
 
 @NgModule({
