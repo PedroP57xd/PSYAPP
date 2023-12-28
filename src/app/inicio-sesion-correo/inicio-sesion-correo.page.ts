@@ -14,7 +14,7 @@ import {
 })
 export class InicioSesionCorreoPage implements OnInit {
 
-  formularioInicioSesionCorreo: FormGroup | undefined;
+  formularioInicioSesionCorreo: FormGroup;
 
   constructor(public fb: FormBuilder) {
 
