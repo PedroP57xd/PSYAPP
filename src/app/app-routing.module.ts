@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'crear-cuenta',
     loadChildren: () => import('./crear-cuenta/crear-cuenta.module').then( m => m.CrearCuentaPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({
