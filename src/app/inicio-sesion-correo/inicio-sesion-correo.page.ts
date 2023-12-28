@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  FormGroup,
+  FormControl,
+  Validators,
+  FormBuilder
+} from '@angular/forms';
+
 
 @Component({
   selector: 'app-inicio-sesion-correo',
@@ -7,7 +14,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSesionCorreoPage implements OnInit {
 
-  constructor() { }
+  formularioInicioSesionCorreo: FormGroup | undefined;
+
+  constructor(public fb: FormBuilder) {
+
+    this.formularioInicioSesionCorreo = this.fb.group({
+      'correo': new FormControl("",Validators.required),
+      'contraseña': new FormControl("",Validators.required)
+      
+    })
+
+  }
 
   ngOnInit() {
   }
