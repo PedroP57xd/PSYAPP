@@ -1,108 +1,94 @@
 
-<ion-content class="ion-padding"> 
-  <div class="getStarted"><!-- imagen de la app, textos y fraces de bienvenida -->
-    <img src="../../assets/logo.jpg" alt="">
-    <div class="text">
-    <div class="title">Bienvenido a PSY</div>
-    <div class="subtitle">Una Ayuda para tu vida</div>
-  </div>
-  <div class="frame-81">
-    <a href="/inicio-sesion-correo"> <!-- Botón de "comenzar" para avanzar al inicio de sesion o crear una cuenta -->
-    <div class="button"  >
-      <div class="label" >
-      COMENZAR
-      </div>
-    </div></a>
-    <div class="or">
-      <div class="rectangle-2"></div>
-      <div class="inicia-con">Inicia con</div><!-- opcion para poder iniciar mediante otros medios-->
-      <div class="rectangle-1"></div>
+<ion-content color="tertiary" class="ion-padding"> 
+  <div class="general">
+    <div class="logo">
+      <img src="../../assets/logo.jpg" alt="">
     </div>
-    <div class="socmed-opt">
-      <div class="google"><!-- Logo de google -->
-        <svg
-          class="flat-color-icons-google"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21.8055 10.0415H21V10H12V14H17.6515C16.827 16.3285 14.6115 18 12 18C8.6865 18 6 15.3135 6 12C6 8.6865 8.6865 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C6.4775 2 2 6.4775 2 12C2 17.5225 6.4775 22 12 22C17.5225 22 22 17.5225 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
-            fill="#FFC107"
-          />
-          <path
-            d="M3.15295 7.3455L6.43845 9.755C7.32745 7.554 9.48045 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C8.15896 2 4.82795 4.1685 3.15295 7.3455Z"
-            fill="#FF3D00"
-          />
-          <path
-            d="M12 22.0001C14.583 22.0001 16.93 21.0116 18.7045 19.4041L15.6095 16.7851C14.5718 17.5743 13.3038 18.0011 12 18.0001C9.39903 18.0001 7.19053 16.3416 6.35853 14.0271L3.09753 16.5396C4.75253 19.7781 8.11353 22.0001 12 22.0001Z"
-            fill="#6872A1"
-          />
-          <path
-            d="M21.8055 10.0415H21V10H12V14H17.6515C17.2571 15.1082 16.5467 16.0766 15.608 16.7855L15.6095 16.7845L18.7045 19.4035C18.4855 19.6025 22 17 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
-            fill="#1976D2"
-          />
-        </svg>
+    <br>
+    <div class="texto">
+      <ion-label id="titulo">Bienvenido a PSY</ion-label>
+      <br>
+      <ion-label id="subTitulo">Tu compañia emocional en un solo lugar</ion-label>
+    </div>
+    <br>
+    <br>
+    <a href="/login">
+      <div class="comenzar">
+      <ion-button class="boton" shape="round">
+        <ion-label>Comencemos</ion-label>
+      </ion-button>
+    </div>
+    </a>
+    <br><br>
+    <div class="iSesionCon">
+      <div class="or">
+        <div class="rectangle-2"></div>
+        <div class="inicia-con">Inicia con</div>
+        <div class="rectangle-1"></div>
       </div>
-      <div class="apple"><!-- Logo de apple -->
-        <div class="foundation-social-apple">
+      <br><br>
+      <div class="icons">
+        <div class="google">
           <svg
-            class="group"
-            width="18"
-            height="20"
-            viewBox="0 0 18 20"
+            class="flat-color-icons-google"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M16.6913 6.84166C15.7015 5.6083 14.3129 4.89478 13.002 4.89478C11.2678 4.89478 10.535 5.7187 9.33192 5.7187C8.09184 5.7187 7.14888 4.89598 5.64888 4.89598C4.17552 4.89598 2.60904 5.79093 1.61592 7.32046C0.218404 9.47133 0.455044 13.5182 2.72112 16.9668C3.5316 18.1999 4.614 19.5866 6.02928 19.5998C7.28712 19.6113 7.64304 18.7975 9.34968 18.7879C11.0566 18.7785 11.3794 19.6087 12.637 19.5969C14.0522 19.5835 15.1942 18.048 16.0042 16.8146C16.5847 15.9312 16.801 15.4848 17.2519 14.4861C13.9757 13.2482 13.4489 8.61886 16.6913 6.84166Z"
-              fill="#111827"
+              d="M21.8055 10.0415H21V10H12V14H17.6515C16.827 16.3285 14.6115 18 12 18C8.6865 18 6 15.3135 6 12C6 8.6865 8.6865 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C6.4775 2 2 6.4775 2 12C2 17.5225 6.4775 22 12 22C17.5225 22 22 17.5225 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
+              fill="#FFC107"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M11.6866 3.51702C12.3166 2.7087 12.7952 1.56678 12.6214 0.399902C11.5923 0.470942 10.3884 1.12542 9.68572 1.9791C9.0478 2.75382 8.521 3.9027 8.72596 5.01942C9.8494 5.05422 11.012 4.38294 11.6866 3.51702Z"
-              fill="#111827"
+              d="M3.15295 7.3455L6.43845 9.755C7.32745 7.554 9.48045 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C8.15896 2 4.82795 4.1685 3.15295 7.3455Z"
+              fill="#FF3D00"
+            />
+            <path
+              d="M12 22.0001C14.583 22.0001 16.93 21.0116 18.7045 19.4041L15.6095 16.7851C14.5718 17.5743 13.3038 18.0011 12 18.0001C9.39903 18.0001 7.19053 16.3416 6.35853 14.0271L3.09753 16.5396C4.75253 19.7781 8.11353 22.0001 12 22.0001Z"
+              fill="#4A9C43"
+            />
+            <path
+              d="M21.8055 10.0415H21V10H12V14H17.6515C17.2571 15.1082 16.5467 16.0766 15.608 16.7855L15.6095 16.7845L18.7045 19.4035C18.4855 19.6025 22 17 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z"
+              fill="#1976D2"
             />
           </svg>
+          <ion-label>Google</ion-label>
+        </div>
+        <div class="facebook">
+          <svg
+            class="logos-facebook"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_3_1608)">
+              <path
+                d="M24 12C24 5.37263 18.6274 0 12 0C5.37262 0 0 5.37253 0 12C0 17.9895 4.38825 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6575 4.6875C15.9705 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.3398 7.875 13.875 8.80003 13.875 9.74906V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6117 22.954 24 17.9896 24 12Z"
+                fill="#1877F2"
+              />
+              <path
+                d="M16.6711 15.4688L17.2031 12H13.875V9.74906C13.875 8.79994 14.3399 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6575 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C10.7453 23.9514 11.3722 24.0002 12 24C12.6278 24.0002 13.2547 23.9514 13.875 23.8542V15.4688H16.6711Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3_1608">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <ion-label>facebook</ion-label>
         </div>
       </div>
-      <div class="facebook"><!-- Logo de facebook -->
-        <svg
-          class="logos-facebook"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_3_1608)">
-            <path
-              d="M24 12C24 5.37263 18.6274 0 12 0C5.37262 0 0 5.37253 0 12C0 17.9895 4.38825 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6575 4.6875C15.9705 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.3398 7.875 13.875 8.80003 13.875 9.74906V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6117 22.954 24 17.9896 24 12Z"
-              fill="#1877F2"
-            />
-            <path
-              d="M16.6711 15.4688L17.2031 12H13.875V9.74906C13.875 8.79994 14.3399 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6575 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C10.7453 23.9514 11.3722 24.0002 12 24C12.6278 24.0002 13.2547 23.9514 13.875 23.8542V15.4688H16.6711Z"
-              fill="white"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_3_1608">
-              <rect width="24" height="24" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div class="crear"><!-- opcion para crear una nueva cuenta -->
-        <div class="labela" >
-          Aun no tienes una cuenta?<a href="/crear-cuenta">Sing up</a>
-          </div>
+      <br><br>
+      <div class="texto">
+        <ion-label>¿Aún no tienes una cuenta? </ion-label>
+        <a href="sign-up"><ion-label>Sign up</ion-label></a>
       </div>
     </div>
-  </div>
   </div>
 </ion-content>
