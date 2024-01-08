@@ -73,21 +73,28 @@ img{
     font-weight: var(--body-large-regular-font-weight, 700);
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 ion-item{
-    width: 80%;
+    width: 350px;
     background-color: #4697B4;
     border-radius: 12px;
     border-style: solid;
     border-color: var(--color-grey-200, #eeeff2);
     border-width: 1px;
-    padding: 8px 16px 8px 16px;
-    display: grid;
-    align-items: center;
-    justify-content: baseline;
-    align-self: stretch;
+    padding: 0px 0px 20px 10px;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: center;
     flex-shrink: 0;
-    height: 56px;
-    position: relative;
+    height: 60px;
+    margin-bottom: 15px;
 }
 
 
