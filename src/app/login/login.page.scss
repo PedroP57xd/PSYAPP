@@ -8,24 +8,24 @@
     display: grid;
     align-content: space-between;
 }
-.logo{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10%;
-}
 
+.regresar{
+    margin-top: 12%;
+    margin-left: 12%;
+    
+}
 img{
-    border-radius: 100%;
-    width: 70%;
+    width: 30px;
 }
 
 .texto{
+    padding: 100 100 100 100px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    justify-content: center;
     color: #A7D0D2;
-    
+    width: 300px;
+    margin-left: 8%;
 }
 
 #titulo{
@@ -39,28 +39,75 @@ img{
     align-self: stretch;
 }
 
-#subTitulo{
+.conTtex{
     color: var(--color-secondary-400, #ffd534);
-    text-align: center;
+    text-align: left;
+    font-family: var(--body-large-regular-font-family, "-", sans-serif);
+    font-size: var(--body-large-regular-font-size, 16px);
+    line-height: var(--body-large-regular-line-height, 150%);
+    font-weight: var(--body-large-regular-font-weight, 400);
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#text{ 
+    color: var(--color-secondary-400, #ffd534);
     font-family: var(
-        --body-medium-regular-font-family,
+        --body-large-regular-font-family,
         "Inter-Regular",
         sans-serif
     );
-    font-size: var(--body-medium-regular-font-size, 14px);
-    line-height: var(--body-medium-regular-line-height, 160%);
-    font-weight: var(--body-medium-regular-font-weight, 400);
-    position: relative;
-    align-self: stretch;
+    font-size: var(--body-large-regular-font-size, 16px);
+    line-height: var(--body-large-regular-line-height, 150%);
+    font-weight: var(--body-large-regular-font-weight, 400);
 }
-.comenzar{
+
+#psy{
+    color: var(--color-secondary-400, #97a9bd);
+    font-family: var(--body-large-regular-font-family, "Inter-Bold", sans-serif);
+    font-size: var(--body-large-regular-font-size, 16px);
+    line-height: var(--body-large-regular-line-height, 150%);
+    font-weight: var(--body-large-regular-font-weight, 700);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-item{
+    width: 350px;
+    background-color: #4697B4;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: var(--color-grey-200, #eeeff2);
+    border-width: 1px;
+    padding: 0px 0px 20px 10px;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.SingIn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .boton{
-    background: #3b778d;
+    background: #4697B4;
     border-radius: 40px;
     display: flex;
     flex-direction: row;
@@ -69,6 +116,7 @@ img{
     justify-content: center;
     align-self: stretch;
     flex-shrink: 0;
+    width: 60%;
     height: 56px;
     position: relative;
 }

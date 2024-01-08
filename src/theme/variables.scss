@@ -4,28 +4,44 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #4697B4;
+  --ion-color-primary-rgb: 70, 151, 180;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #5f92a5;
+  --ion-color-primary-tint: #1f657e;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
-  --ion-color-secondary-rgb: 61, 194, 255;
+  --ion-color-secondary: #546EAB;
+  --ion-color-secondary-rgb: 84, 110, 171;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #36abe0;
-  --ion-color-secondary-tint: #50c8ff;
+  --ion-color-secondary-shade: #6f93e7;
+  --ion-color-secondary-tint: #1f3568;
 
   /** tertiary **/
-  --ion-color-tertiary: #5260ff;
-  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary: #254B5E;
+  --ion-color-tertiary-rgb: 37, 75, 94;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #4854e0;
-  --ion-color-tertiary-tint: #6370ff;
+  --ion-color-tertiary-shade: #254B5E;
+  --ion-color-tertiary-tint: #254B5E;
+
+  /** quaternary **/
+  --ion-color-quaternary: #A7D0D2;
+  --ion-color-quaternary-rgb: 167, 208, 210;
+  --ion-color-quaternary-contrast: #ffffff;
+  --ion-color-quaternary-contrast-rgb: 255,255,255;
+  --ion-color-quaternary-shade: #a9f9fd;
+  --ion-color-quaternary-tint: #3ea3a8;
+
+  /** quinary **/
+  --ion-color-quinary: #F1E6D2;
+  --ion-color-quinary-rgb: 241, 230, 210;
+  --ion-color-quinary-contrast: #ffffff;
+  --ion-color-quinary-contrast-rgb: 255,255,255;
+  --ion-color-quinary-shade: #f1d298;
+  --ion-color-quinary-tint: #c7912c;
 
   /** success **/
   --ion-color-success: #2dd36f;
@@ -83,26 +99,40 @@
    */
 
   body {
-    --ion-color-primary: #428cff;
-    --ion-color-primary-rgb: 66,140,255;
-    --ion-color-primary-contrast: #ffffff;
-    --ion-color-primary-contrast-rgb: 255,255,255;
-    --ion-color-primary-shade: #3a7be0;
-    --ion-color-primary-tint: #5598ff;
+  --ion-color-primary: #4697B4;
+  --ion-color-primary-rgb: 70, 151, 180;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #5f92a5;
+  --ion-color-primary-tint: #1f657e;
 
-    --ion-color-secondary: #50c8ff;
-    --ion-color-secondary-rgb: 80,200,255;
-    --ion-color-secondary-contrast: #ffffff;
-    --ion-color-secondary-contrast-rgb: 255,255,255;
-    --ion-color-secondary-shade: #46b0e0;
-    --ion-color-secondary-tint: #62ceff;
+  --ion-color-secondary: #546EAB;
+  --ion-color-secondary-rgb: 84, 110, 171;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #6f93e7;
+  --ion-color-secondary-tint: #1f3568;
 
-    --ion-color-tertiary: #6a64ff;
-    --ion-color-tertiary-rgb: 106,100,255;
-    --ion-color-tertiary-contrast: #ffffff;
-    --ion-color-tertiary-contrast-rgb: 255,255,255;
-    --ion-color-tertiary-shade: #5d58e0;
-    --ion-color-tertiary-tint: #7974ff;
+  --ion-color-tertiary: #254B5E;
+  --ion-color-tertiary-rgb: 37, 75, 94;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #254B5E;
+  --ion-color-tertiary-tint: #254B5E;
+
+  --ion-color-quaternary: #A7D0D2;
+  --ion-color-quaternary-rgb: 167, 208, 210;
+  --ion-color-quaternary-contrast: #ffffff;
+  --ion-color-quaternary-contrast-rgb: 255,255,255;
+  --ion-color-quaternary-shade: #a9f9fd;
+  --ion-color-quaternary-tint: #3ea3a8;
+
+  --ion-color-quinary: #F1E6D2;
+  --ion-color-quinary-rgb: 241, 230, 210;
+  --ion-color-quinary-contrast: #ffffff;
+  --ion-color-quinary-contrast-rgb: 255,255,255;
+  --ion-color-quinary-shade: #f1d298;
+  --ion-color-quinary-tint: #c7912c;
 
     --ion-color-success: #2fdf75;
     --ion-color-success-rgb: 47,223,117;

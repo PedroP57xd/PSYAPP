@@ -1,34 +1,52 @@
-
-<ion-content color="tertiary" class="ion-padding"> 
-  <div class="general"> <!-- Este es el contenedor general que engloba todos los elementos que estan adentro de el -->
-    <div class="logo"> <!-- Este igual es un contenedor, pero este es solo para el logo de la aplicacion  -->
-      <img src="../../assets/logo.jpg" alt=""> <!-- img se usa para poder insertar imagenes en la App  -->
-    </div> <!-- con esto cerramos el contenedor del logo  -->
-    <br> <!-- El "br" nos genera un espacio entre el div logo y el div texto  -->
-    <div class="texto"> <!-- contenedor en el que van a estar los textos  -->
-      <ion-label id="titulo">Bienvenido a PSY</ion-label> <!-- "ion-label" se usa para poder poner textos, en este caso un titulo, por lo que tiene el id"titulo -->
-      <br><!-- El "br" nos genera un espacio entre los label  -->
-      <ion-label id="subTitulo">Tu compañia emocional en un solo lugar</ion-label><!-- este igual para textos pero para subtitulo, por lo que tiene el id"subtitulo"  -->
+<ion-content [fullscreen]="true" color="tertiary">
+  <div class="general"> <!-- Este el el contenedor general que engloba todos los elementos que estan adentro -->
+    <div class="regresar"> <!-- Igual es un contenedor, pero este es mas pequeño y engloba solo el boton para regresar al menu inicial  -->
+      <a href="/home">
+        <img src="../../assets/arrow-left.png" alt="">
+      </a>
     </div>
     <br>
-    <br>
-    <a href="/login"><!--  la etiqueta <a> nos ayuda  a poder generar hiperbinculos con otras paginas del mismo proyecto-->
-      <div class="comenzar"><!-- Contenedor para el boton  -->
-        <ion-button class="boton" shape="round"><!-- esta etiqueta nos proporsiona un boton   -->
-          <ion-label>Comencemos</ion-label><!--  texto que llevara el boton -->
-        </ion-button>
+    <div class="texto">
+      <ion-label id="titulo">Bienvenido a PSY</ion-label>
+      <br><br>
+      <div class="contTex">
+        <ion-label id="text">Estamos felices de que hayas vuelto, usa tu cuenta para poder seguir disfrutando de </ion-label>
+        <ion-label id="psy">PSY</ion-label>
       </div>
-    </a>
+    </div>
+    <div class="oInSession">
+      <div class="email"></div>
+      <a href=""><div class="cel"></div></a>
+    </div>
     <br><br>
-    <div class="iSesionCon"><!-- contenedor para las alternativas para el inicio de sesion  -->
-      <div class="or"><!-- Este contenedor y su contenido sirve para que se pueda visibilizar la palabra "inicia con"   -->
+    <form [formGroup]="formularioLogin">
+      <ion-item color="primary">
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input FormControlName="correo"></ion-input>
+      </ion-item>
+      <ion-item color="primary">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input FormControlName="contraseña" type="password"></ion-input>
+      </ion-item>
+    </form>
+    <br>
+    <div class="texto">
+      <ion-label>¿Olvidaste tu contraseña?</ion-label>
+    </div>
+    <br><br>
+    <div class="SingIn">
+        <ion-button class="boton" shape="round" > Sing in </ion-button>
+    </div>
+    <br>
+    <div class="iSesionCon">
+      <div class="or">
         <div class="rectangle-2"></div>
-        <div class="inicia-con">Inicia con</div>
+        <div class="inicia-con">o tambien con</div>
         <div class="rectangle-1"></div>
       </div>
       <br><br>
-      <div class="icons"><!-- muestra los respectivos iconos de google y facebook para el inicio de sesion  -->
-        <div class="google"><!-- muestra el icono de goole  -->
+      <div class="icons">
+        <div class="google">
           <svg
             class="flat-color-icons-google"
             width="24"
@@ -56,7 +74,7 @@
           </svg>
           <ion-label>Google</ion-label>
         </div>
-        <div class="facebook"><!-- muestra el icono de facebook  -->
+        <div class="facebook">
           <svg
             class="logos-facebook"
             width="24"
@@ -85,10 +103,10 @@
         </div>
       </div>
       <br><br>
-      <div class="texto"><!-- muestra el texto inferior en el que esta el hiperbinculo para moverse al registro de sesion  -->
+      <div class="texto">
         <ion-label>¿Aún no tienes una cuenta? </ion-label>
-        <a href="sign-up"><ion-label>Sign up</ion-label></a><!--  vinculo para dirigirse a la pagina de registro -->
+        <a href="sign-up"><ion-label>Sign up</ion-label></a>
       </div>
     </div>
   </div>
-</ion-content><!-- Esto cerraria esta pagina de la app -->
+</ion-content>
